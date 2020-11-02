@@ -1,11 +1,15 @@
 var dom = document.getElementById('rso');
 var links = dom.getElementsByClassName('g');
 
-var formatedLinks = {};
+var formatedLinks = [];
 
 for(let i = 0; i < links.length; i++) {
 
-    formatedLinks[links[i].getElementsByTagName('h3')[0].innerText] =  links[i].getElementsByTagName('a')[0].href;
+    var map = {'text': links[i].getElementsByTagName('h3')[0].innerText, 'link': links[i].getElementsByTagName('a')[0].href};
+    formatedLinks.push(map);
 }
 
-chrome.runtime.sendMessage({"action": "print_links", "data": formatedLinks});
+chrome.runtime.sendMessage({
+    "action": "print_links", 
+    "data": formatedLinks,
+}, res => {console.log(res)});

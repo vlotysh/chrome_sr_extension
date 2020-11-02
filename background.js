@@ -23,6 +23,7 @@ chrome.contextMenus.create({
     "onclick": ImageClick
 })
 
-chrome.runtime.onMessage.addListener(function(message, sender, response) {
+chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
 console.log(message.action, message.data);
+sendResponse({'text': 'Links are passed: '+ message.data.length});
 });

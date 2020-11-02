@@ -22,3 +22,7 @@ chrome.contextMenus.create({
     "contexts": ["image"],
     "onclick": ImageClick
 })
+
+chrome.runtime.onMessage.addListener(function(message, sender, response) {
+console.log(message.action, message.data);
+});

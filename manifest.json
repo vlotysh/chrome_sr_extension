@@ -1,0 +1,16 @@
+{
+    "name": "Google extension for share",
+    "description": "Share some info from our browser",
+    "version": "0.1.2",
+    "permissions": ["contextMenus" ,"activeTab", "tabs"],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.google.com/*"],
+            "js": ["index.js"]
+        }
+    ],
+    "manifest_version": 2
+}

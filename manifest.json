@@ -2,15 +2,39 @@
     "name": "Google extension for share",
     "description": "Share some info from our browser",
     "version": "0.1.2",
-    "permissions": ["contextMenus" ,"activeTab", "tabs"],
+    "permissions": [
+        "contextMenus",
+        "activeTab",
+        "tabs",
+        "storage"
+    ],
     "background": {
-        "scripts": ["background.js"]
+        "scripts": [
+            "background.js"
+        ]
     },
     "content_scripts": [
         {
-            "matches": ["https://www.google.com/*"],
-            "js": ["index.js"]
+            "matches": [
+                "https://www.google.com/*"
+            ],
+            "js": [
+                "index.js"
+            ]
         }
     ],
-    "manifest_version": 2
+    "manifest_version": 2,
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": "logo.png"
+    },
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+F",
+                "mac": "MacCtrl+Shift+F"
+            },
+            "description": "Opens extension.html"
+        }
+    }
 }

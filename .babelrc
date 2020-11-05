@@ -1,0 +1,16 @@
+{
+  "presets": [
+    ["@babel/preset-env",
+        {
+          "targets": {"browsers": ["ie >= 7"]}
+        }
+    ],
+    "@babel/preset-typescript"
+  ],
+  "plugins": [
+    "@babel/plugin-transform-typescript",
+    "@babel/plugin-transform-runtime",
+    "@babel/plugin-transform-async-to-generator",
+    "@babel/plugin-proposal-class-properties"
+  ]
+}

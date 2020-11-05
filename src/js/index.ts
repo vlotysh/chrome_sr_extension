@@ -1,3 +1,6 @@
+/// <reference path="./../../types/chrome.d.ts"/>
+
+
 var dom = document.getElementById('rso');
 if (dom) {
     var links = dom.getElementsByClassName('g');

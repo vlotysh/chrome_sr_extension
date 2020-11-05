@@ -1,0 +1,13 @@
+version: '2'
+services:
+  webpack:
+    build:
+      context: .
+      dockerfile: docker.webpack
+    image: chrome-extension
+    container_name: chrome-extension
+    volumes:
+      - .:/app
+volumes:
+  wwwroot:
+    driver: local

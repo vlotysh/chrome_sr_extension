@@ -1,10 +1,12 @@
-function PageClick(info, tab) {
+/// <reference path="./../../types/chrome.d.ts"/>
+
+function PageClick(info:any, tab:any) {
     console.log('Click on page', info, tab )
 
    // chrome.tabs.create({url: chrome.extension.getURL('background.html')});
 }
 
-function ImageClick(info, tab) {
+function ImageClick(info:any, tab:any) {
     console.log('Click on page', info, tab )
 
    // chrome.tabs.create({url: chrome.extension.getURL('background.html')});

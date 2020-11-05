@@ -1,0 +1,37 @@
+{
+  "name": "webpack-ts-babel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/js/index.js",
+  "scripts": {
+    "dev": "webpack --config webpack.dev.js",
+    "prod": "webpack --config webpack.prod.js",
+    "watch": "webpack --watch  --progress --config webpack.dev.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.42",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.42",
+    "@babel/plugin-transform-async-to-generator": "^7.7.4",
+    "@babel/plugin-transform-runtime": "^7.7.6",
+    "@babel/preset-env": "^7.0.0-beta.42",
+    "@babel/preset-react": "^7.7.4",
+    "@babel/preset-typescript": "^7.7.7",
+    "@types/jquery": "^3.5.4",
+    "babel-loader": "^8.0.0-beta.2",
+    "babel-runtime": "^6.26.0",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.4",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.7.0",
+    "@babel/runtime": "^7.7.7",
+    "@types/crypto-js": "^3.1.43",
+    "crypto-js": "^3.1.9-1",
+    "jquery": "^3.5.1",
+    "wrapper-webpack-plugin": "^2.1.0"
+  }
+}

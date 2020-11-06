@@ -5,7 +5,7 @@ const WrapperPlugin = require('wrapper-webpack-plugin');
 
 module.exports = merge(common, {
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'dist/build'),
     filename: '[name].min.js'
   },
   mode: 'production',

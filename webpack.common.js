@@ -1,9 +1,9 @@
 module.exports = {
     entry: {
-        'index': ["@babel/polyfill", "./src/js/index"],
-        'background': ["@babel/polyfill", "./src/js/background"],
-        'options': ["@babel/polyfill", "./src/js/options"],
-        'popup': ["@babel/polyfill", "./src/js/popup"],
+        'index': ["@babel/polyfill", "./dist/src/js/index"],
+        'background': ["@babel/polyfill", "./dist/src/js/background"],
+        'options': ["@babel/polyfill", "./dist/src/js/options"],
+        'popup': ["@babel/polyfill", "./dist/src/js/popup"],
     },
     module: {
         rules: [

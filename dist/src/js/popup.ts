@@ -1,5 +1,6 @@
 import $ from 'jquery';
 
 $('#action_button').on('click', function() {
-    alert('Clike!');
+    console.log(chrome.runtime.getManifest());
+    alert('Click!');
 })

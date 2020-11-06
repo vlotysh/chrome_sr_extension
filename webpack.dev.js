@@ -4,7 +4,7 @@ const path = require('path');
 
 module.exports = merge(common, {
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'dist/build'),
     filename: '[name].js'
   },
   mode: 'development',

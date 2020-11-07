@@ -10,7 +10,4 @@ RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - && apt-get install n
 RUN npm install uglify-js webpack webpack-cli -g | npm install
 RUN npm add @babel/runtime
 
-#CMD npm run dev
-
-#CMD tail -f /dev/null
 CMD npm run watch

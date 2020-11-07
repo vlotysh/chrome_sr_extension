@@ -20,7 +20,7 @@ if (dom) {
     
 }
 
-window.loadJs = function(scriptName, context) {
+function loadJs(scriptName, context) {
     let isDevMod = !('update_url' in chrome.runtime.getManifest());
     let path = scriptName + '.js';
 
@@ -32,3 +32,7 @@ window.loadJs = function(scriptName, context) {
     script.async = false; // чтобы гарантировать порядок
     context.head.appendChild(script);
 }
+
+window.loadJs = loadJs;
+
+console.log(loadJs);

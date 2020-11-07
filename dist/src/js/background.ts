@@ -3,7 +3,7 @@
 function PageClick(info:any, tab:any) {
     console.log('Click on page', info, tab )
 
-    chrome.tabs.create({url: chrome.extension.getURL('background.html')});
+    chrome.tabs.create({url: chrome.extension.getURL('src/html/background.html')});
 }
 
 function ImageClick(info:any, tab:any) {
